@@ -1,0 +1,16 @@
+#! /bin/sh
+
+if [ $# -lt 2 ]
+then
+  echo 'error: 2 arguments (origin-image-path, app-dir-path) are required' 1>&2
+  exit 1
+fi
+ORIGIN_IMAGE_PATH=$1
+APP_DIR_PATH=$2
+convert -resize 512x512! $ORIGIN_IMAGE_PATH -matte mask-white-r85.png -compose copy-opacity -composite -unsharp 0x1 curved.png
+cp curved.png $APP_DIR_PATH/ic_launcher-web.png
+convert -resize 72x72!   curved.png $APP_DIR_PATH/res/drawable-hdpi/ic_launcher.png
+convert -resize 48x48!   curved.png $APP_DIR_PATH/res/drawable-mdpi/ic_launcher.png
+convert -resize 96x96!   curved.png $APP_DIR_PATH/res/drawable-xhdpi/ic_launcher.png
+convert -resize 144x144! curved.png $APP_DIR_PATH/res/drawable-xxhdpi/ic_launcher.png
+rm curved.png
