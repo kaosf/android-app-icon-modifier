@@ -2,6 +2,12 @@
 
 Version 0.0.1
 
+## Requirements
+
+* ImageMagick
+
+`convert` command is required.
+
 ## Usage
 
 ```sh
