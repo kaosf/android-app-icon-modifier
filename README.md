@@ -12,7 +12,7 @@ Version 0.0.1
 
 Original image is [here](http://kawa.at.webry.info/201011/article_3.html).
 
-Copyright 2010 Yusuke KAWASAKI
+Copyright 2010 Yusuke KAWASAKI ([Kawa.net xp](http://www.kawa.net))
 
 ## License
 
