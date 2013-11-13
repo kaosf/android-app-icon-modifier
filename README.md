@@ -1,5 +1,7 @@
 # Android App Icon Modifier
 
+Version 0.0.1
+
 ## Usage
 
 ```sh
