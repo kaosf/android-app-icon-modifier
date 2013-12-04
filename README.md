@@ -11,7 +11,7 @@ Version 0.0.1
 ## Usage
 
 ```sh
-./modify-android-app-icon some/where/origin.png dokoka/android/appdir
+./modify-android-app-icon some/where/origin.png another/place/android/appdir
 ```
 
 ## About Mask Image `mask-white-r85.png`
